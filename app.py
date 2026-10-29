@@ -26,8 +26,11 @@ def load_model():
     return joblib.load(MODEL_PATH)
 
 
-@app.route("/")
-def home():
+@app.get("/")
+def health_check():
+    return jsonify({
+        "status": "ok",
+        "service": "student-result-prediction"
     return "Student Result Prediction API - Practical 10 Updated"
     })
 
