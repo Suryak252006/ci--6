@@ -30,8 +30,8 @@ def load_model():
 def health_check():
     return jsonify({
         "status": "ok",
-        "service": "student-result-prediction"
-    return "Student Result Prediction API - Practical 10 Updated"
+        "service": "student-result-prediction",
+        "message": "Student Result Prediction API - Practical 10 Updated"
     })
 
 
